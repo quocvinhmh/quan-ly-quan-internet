@@ -68,9 +68,9 @@
 
             <% if ("admin".equals(role)) { %>
             <a class="btn btn-warning btn-sm me-2" href="${pageContext.request.contextPath}/admin?action=list">Quản trị</a>
-            <a class="btn btn-success btn-sm me-2" href="${pageContext.request.contextPath}">Quản lý</a>
+            <a class="btn btn-success btn-sm me-2" href="${pageContext.request.contextPath}/manager?action=listComputer">Quản lý</a>
             <% } else if ("manager".equals(role)) { %>
-            <a class="btn btn-success btn-sm me-2" href="${pageContext.request.contextPath}">Quản lý</a>
+            <a class="btn btn-success btn-sm me-2" href="${pageContext.request.contextPath}/manager?action=listComputer">Quản lý</a>
             <% } %>
 
             <a class="btn btn-outline-light btn-sm" href="${pageContext.request.contextPath}/Logout">Đăng xuất</a>
